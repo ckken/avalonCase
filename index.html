@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>avalon develop by Ken</title>
+
+    <!--mobile-->
+    <!--<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--图标-->
+    <!--<link rel="apple-touch-icon" href="icon.png" />-->
+    <!--启动动画-->
+    <!--css-->
+
+<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="statics/doc.css" rel="stylesheet" type="text/css">
+<link href="statics/pygments-manni.css" rel="stylesheet" type="text/css">
+<link href="statics/style.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="lib/html5/html5shiv.js"></script>
+    <script src="lib/html5/respond.js"></script>
+    <![endif]-->
+
+
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="app/bootstrap_init.js"></script>
+<script src="lib/avalon/avalon.js"></script>
+</head>
+
+<body>
+<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a href="#/" class="navbar-brand">AvalonJs</a> </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li class="active"> <a href="#/">开始使用</a> </li>
+        <li> <a href="#/aboutUs">关于我们</a> </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!--header-->
+<div class="container">
+  <div class="row" ms-controller="mainContent">
+    <div class="col-md-3">
+      <div class="bs-sidebar hidden-print affix-top">
+        <ul class="nav bs-sidenav">
+          <li><a href="#/start">安装方式</a></li>
+          <li><a href="#/route">路由操作</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <div ms-include-src="view{{currPath}}.html"></div>
+    </div>
+  </div>
+</div>
+<!--container--> 
+
+<script src="app/main.js"></script>
+</body>
+</html>
