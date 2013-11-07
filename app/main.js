@@ -1,8 +1,8 @@
-require("avalon.router", function() {
+require("mmRouter", function() {
 	
 	
 	var model = avalon.define('mainContent', function(vm) {
-		vm.currPath = ""
+		vm.currPath = "/index"
 	});
 	
 	
